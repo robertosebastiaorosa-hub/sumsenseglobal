@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SumSenseGlobal offers simple, reliable and easy-to-use online calculators for everyday life, health and finance.">
+  <meta name="theme-color" content="#10243a">
+  <title>SumSenseGlobal | Smart Calculators for Everyday Life</title>
+
+  <style>
+    :root {
+      --navy: #10243a;
+      --blue: #2563eb;
+      --light: #f4f7fb;
+      --text: #26364a;
+      --muted: #64748b;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 20px 6%;
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #60a5fa;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #10243a, #1e4775);
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #dbeafe;
+      font-size: 17px;
+    }
+
+    .search {
+      margin: 30px auto 0;
+      max-width: 500px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: 55px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .category {
+      background: white;
+      border-radius: 14px;
+      padding: 27px;
+      box-shadow: 0 5px 20px rgba(15, 35, 60, 0.06);
+    }
+
+    .category h3 {
+      color: var(--navy);
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .category p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .calculator-list {
+      list-style: none;
+    }
+
+    .calculator-list li {
+      padding: 11px 0;
+      border-top: 1px solid #edf0f5;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .calculator-list li span {
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .coming {
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-left: 5px;
+    }
+
+    .about {
+      margin-top: 55px;
+      padding: 35px;
+      background: white;
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .about p {
+      max-width: 720px;
+      margin: auto;
+      color: var(--muted);
+    }
+
+    footer {
+      background: var(--navy);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">SumSense<span>Global</span></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#calculators">Calculators</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Make Better Decisions with Smart Calculators</h1>
+    <p>
+      Simple, practical and easy-to-use calculators
+      to help you understand your numbers and make
+      everyday decisions with confidence.
+    </p>
+
+    <div class="search">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search for a calculator..."
+        aria-label="Search calculators"
+      >
+    </div>
+  </section>
+
+  <main id="calculators">
+    <div class="section-title">
+      <h2>Explore Our Calculators</h2>
+      <p>Useful tools designed to make everyday calculations easier.</p>
+    </div>
+
+    <div class="categories">
+
+      <section class="category">
+        <h3>Health & Wellness</h3>
+        <p>Understand your body and build healthier daily habits.</p>
+        <ul class="calculator-list">
+          <li data-search="bmi body mass index"><span>BMI Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="tdee daily energy calories"><span>TDEE Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="water intake hydration"><span>Water Intake Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="body fat percentage"><span>Body Fat Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="heart rate pulse"><span>Heart Rate Calculator</span> <small class="coming">Coming soon</small></li>
+        </ul>
+      </section>
+
+      <section class="category">
+        <h3>Personal Finance</h3>
+        <p>Make financial calculations clearer and easier.</p>
+        <ul class="calculator-list">
+          <li data-search="compound interest savings"><span>Compound Interest Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="loan payment"><span>Loan Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="mortgage home loan"><span>Mortgage Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="salary take home pay"><span>Salary Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="return on investment roi"><span>ROI Calculator</span> <small class="coming">Coming soon</small></li>
+        </ul>
+      </section>
+
+      <section class="category">
+        <h3>Everyday Life</h3>
+        <p>Practical tools for planning and everyday decisions.</p>
+        <ul class="calculator-list">
+          <li data-search="age birthday"><span>Age Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="date time difference"><span>Date Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="percentage"><span>Percentage Calculator</span> <small class="coming">Coming soon</small></li>
+          <li data-search="unit conversion"><span>Unit Converter</span> <small class="coming">Coming soon</small></li>
+          <li data-search="discount sale"><span>Discount Calculator</span> <small class="coming">Coming soon</small></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <section class="about" id="about">
+      <h2>Welcome to SumSenseGlobal</h2>
+      <p>
+        Our mission is to make calculations simple,
+        accessible and understandable for everyone.
+        We believe that useful information and clear tools
+        can help people make more informed decisions.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 SumSenseGlobal. All rights reserved.</p>
+    <p style="margin-top:12px">
+      <a href="#about">About Us</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const calculatorItems = document.querySelectorAll(".calculator-list li");
+
+    searchInput.addEventListener("input", function () {
+      const search = this.value.toLowerCase().trim();
+
+      calculatorItems.forEach(function (item) {
+        const text = item.textContent.toLowerCase();
+        const keywords = item.dataset.search || "";
+
+        item.style.display =
+          text.includes(search) || keywords.includes(search)
+            ? "list-item"
+            : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
